@@ -1301,11 +1301,9 @@
 
 	var ready = function() {
 		var nextSentence = function(e) {
-			console.log(e);
 			var rand = Math.floor(Math.random() * len);
 			document.getElementById("sentence").innerHTML = sentences[rand] + ".";
 			e.preventDefault();
-			return false;
 		};
 		document.getElementById("next").addEventListener("click", nextSentence, false);
 	};
